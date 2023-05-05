@@ -42,5 +42,31 @@ void main() {
   print("Does weaponAnimal have cat key? ${weaponAnimal.containsKey('cat')}");
 
   // Metode containsValue untuk memastikan keberadaan nilai yang disebutkan terdpaat dalam Map
-  print("Does weaponAnimal have claw value? ${weaponAnimal.containsValue('hard fur')}");
+  print(
+      "Does weaponAnimal have claw value? ${weaponAnimal.containsValue('hard fur')}");
+
+  // Metode remove() digunakan untuk menghapus elemen dalam Map
+  Map<String, String> name = {'Diana': 'Rahmawati', 'Romi': 'Putranto'};
+  name.remove('Romi');
+  print(name);
+
+  // Elemen pada Map dapat diatur dalam perulangan menggunakan for...in...
+  for (var weapon in weaponAnimal.entries) {
+    print('${weapon.key} have ${weapon.value}');
+  }
+
+  // Perulangan juga dapat menggunakan forEach
+  weaponAnimal.forEach((key, value) => print('$key have $value weapon'));
+
+  // Metode removeWhere digunakan untuk menghapus elemen pada Map dengan menggunakan pengkondisian tertentu
+  Map<String, double> mathMarks = {
+    "tia": 30,
+    "dila": 32,
+    "budi": 88,
+    "toni": 70,
+    "rena": 15,
+    "dodi": 20
+  };
+  mathMarks.removeWhere((key, value) => value < 32);
+  print(mathMarks);
 }
