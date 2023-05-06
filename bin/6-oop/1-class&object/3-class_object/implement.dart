@@ -1,4 +1,4 @@
-// Contoh implementasi Class dan Objek dalam Dart
+// Contoh implementasi Class dan Object dalam Dart
 
 // Definisi Class
 class Trapezoid {
@@ -22,17 +22,17 @@ class Trapezoid {
 }
 
 void main() {
-  // Objek trapezoid untuk memanggil dan menentukan semua nilai properti di Class Trapezoid
+  // Object trapezoid untuk memanggil dan menentukan semua nilai properti di Class Trapezoid
   Trapezoid trapezoid = Trapezoid();
 
-  // Melengkapi semua properti dari objek trapezoid
+  // Melengkapi semua properti dari object trapezoid
   trapezoid.a = 20;
   trapezoid.b = 35;
   trapezoid.c = 25;
   trapezoid.d = trapezoid.c;
   trapezoid.height = 10;
 
-  // Menampilkan nilai dari fungsi yang dimiliki objek trapezoid
+  // Menampilkan nilai dari fungsi yang dimiliki object trapezoid
   print("Area of trapezium : ${trapezoid.area()} cm");
   print("Circumference of trapezoid : ${trapezoid.circumference()} cm");
 }

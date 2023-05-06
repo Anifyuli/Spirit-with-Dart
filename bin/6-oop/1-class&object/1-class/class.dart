@@ -1,10 +1,9 @@
-/* Class adalah definisi sebuah template yang terdiri dari metode dan variabel dalam bentuk objek tertentu
+/* Class adalah definisi sebuah template yang terdiri dari metode dan variabel dalam bentuk object tertentu
   Sintaks :
   class namaClass {
     isi class berupa properti, metode, atau fungsi
   }
 */
-import 'dart:svg';
 
 class Animal {
   String? name;

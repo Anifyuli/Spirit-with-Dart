@@ -1,4 +1,4 @@
-// Objek adalah unit kode dan data mandiri yang biasanya dibuat dalam class
+// Object adalah unit kode dan data mandiri yang biasanya dibuat dalam class
 class Fan {
   String? brand;
   int? speedLevel;
@@ -19,7 +19,7 @@ class Fan {
 }
 
 void main() {
-  // fan adalah objek dari class Fan
+  // fan adalah object dari class Fan
   Fan fan = Fan();
   fan.brand = 'Maspion';
   fan.speedLevel = 3;
